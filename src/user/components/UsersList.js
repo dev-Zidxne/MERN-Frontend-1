@@ -14,7 +14,12 @@ function UsersList(props) {
 	return (
 		<ul>
 			{props.items.map((user) => (
-				<UserItem key={user.id} image={user.image} p />
+				<UserItem
+					key={user.id}
+					image={user.image}
+					name={user.name}
+					placeCount={user.places}
+				/>
 			))}
 		</ul>
 	);
